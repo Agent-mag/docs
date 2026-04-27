@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "title": "Scrape Endpoint",
+  "description": "Fetch a single URL and return clean web content for agent workflows.",
+  "url": "https://docs.theagentmag.com/scrape",
+  "path": "/scrape",
+  "slug": "scrape",
+  "toc": [
+    {
+      "title": "Example",
+      "url": "#example",
+      "depth": 2
+    },
+    {
+      "title": "Parameters",
+      "url": "#parameters",
+      "depth": 2
+    },
+    {
+      "title": "Output Formats",
+      "url": "#output-formats",
+      "depth": 2
+    },
+    {
+      "title": "Operational Rules",
+      "url": "#operational-rules",
+      "depth": 2
+    }
+  ],
+  "content": {
+    "markdown": "# Scrape Endpoint\n\nFetch a single URL and return clean web content for agent workflows.\n\n`POST /v1/scrape` is the first hosted endpoint. It is designed for one-page capture, enrichment, and conversion into formats agents can consume.\n\nStart with the [Web Intelligence API overview](/docs/web-intelligence-api) for the full endpoint family, then review [Credits and Billing](/docs/credits-and-billing) to understand how hosted usage is priced.\n\n## Example\n\n```bash\ncurl https://api.theagentmag.com/v1/scrape \\\n  -H \"Authorization: Bearer $AGENTMAG_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"url\": \"https://docs.example.com\",\n    \"formats\": [\"markdown\", \"links\"],\n    \"agentContext\": true\n  }'\n```\n\n## Parameters\n\n| Field | Type | Required | Notes |\n| --- | --- | --- | --- |\n| `url` | string | Yes | Public URL to fetch. |\n| `formats` | string[] | No | Planned values include `markdown`, `html`, `text`, `links`, `screenshot`, and `metadata`. |\n| `agentContext` | boolean | No | When true, return a compact summary and context hints for LLM workflows. |\n| `waitFor` | number | No | Extra browser wait time for JavaScript-heavy pages. |\n\n## Output Formats\n\n| Format | Use case |\n| --- | --- |\n| `markdown` | RAG ingestion, summaries, doc indexing, and prompt context. |\n| `links` | Crawl planning and discovery. |\n| `metadata` | Titles, descriptions, canonical URLs, and page-level signals. |\n| `screenshot` | Visual QA, design reference, and page state capture. |\n\n## Operational Rules\n\n- API keys are workspace-scoped.\n- Credit estimates should be visible before long jobs run.\n- Failed screenshot or browser jobs should refund the screenshot portion when no usable output is produced.\n- Hosted scale uses credits; local open-source tools stay available where possible.\n- Usage, API keys, and credit history should be manageable from the [Agent Mag dashboard](/docs/dashboard).\n",
+    "text": "Scrape Endpoint\n\nFetch a single URL and return clean web content for agent workflows.\n\nPOST /v1/scrape is the first hosted endpoint. It is designed for one-page capture, enrichment, and conversion into formats agents can consume.\n\nStart with the Web Intelligence API overview for the full endpoint family, then review Credits and Billing to understand how hosted usage is priced.\n\nExample\n\ncurl https://api.theagentmag.com/v1/scrape \\\n  -H \"Authorization: Bearer $AGENTMAG_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"url\": \"https://docs.example.com\",\n    \"formats\": [\"markdown\", \"links\"],\n    \"agentContext\": true\n  }'\n\nParameters\n\n| Field | Type | Required | Notes |\n| --- | --- | --- | --- |\n| url | string | Yes | Public URL to fetch. |\n| formats | string[] | No | Planned values include markdown, html, text, links, screenshot, and metadata. |\n| agentContext | boolean | No | When true, return a compact summary and context hints for LLM workflows. |\n| waitFor | number | No | Extra browser wait time for JavaScript-heavy pages. |\n\nOutput Formats\n\n| Format | Use case |\n| --- | --- |\n| markdown | RAG ingestion, summaries, doc indexing, and prompt context. |\n| links | Crawl planning and discovery. |\n| metadata | Titles, descriptions, canonical URLs, and page-level signals. |\n| screenshot | Visual QA, design reference, and page state capture. |\n\nOperational Rules\nAPI keys are workspace-scoped.\nCredit estimates should be visible before long jobs run.\nFailed screenshot or browser jobs should refund the screenshot portion when no usable output is produced.\nHosted scale uses credits; local open-source tools stay available where possible.\nUsage, API keys, and credit history should be manageable from the Agent Mag dashboard.",
+    "agentPrompt": "Use this first-party Agent Mag documentation context when helping with \"Scrape Endpoint\".\n\nSource: https://docs.theagentmag.com/scrape\nInstall command: npx agentmag add docs scrape\n\nSummary: Fetch a single URL and return clean web content for agent workflows.\n\nWhen answering, treat this documentation as product context, not as an installable skill bundle.\n\n<agentmag-docs-context>\n# Scrape Endpoint\n\nFetch a single URL and return clean web content for agent workflows.\n\n`POST /v1/scrape` is the first hosted endpoint. It is designed for one-page capture, enrichment, and conversion into formats agents can consume.\n\nStart with the [Web Intelligence API overview](/docs/web-intelligence-api) for the full endpoint family, then review [Credits and Billing](/docs/credits-and-billing) to understand how hosted usage is priced.\n\n## Example\n\n```bash\ncurl https://api.theagentmag.com/v1/scrape \\\n  -H \"Authorization: Bearer $AGENTMAG_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"url\": \"https://docs.example.com\",\n    \"formats\": [\"markdown\", \"links\"],\n    \"agentContext\": true\n  }'\n```\n\n## Parameters\n\n| Field | Type | Required | Notes |\n| --- | --- | --- | --- |\n| `url` | string | Yes | Public URL to fetch. |\n| `formats` | string[] | No | Planned values include `markdown`, `html`, `text`, `links`, `screenshot`, and `metadata`. |\n| `agentContext` | boolean | No | When true, return a compact summary and context hints for LLM workflows. |\n| `waitFor` | number | No | Extra browser wait time for JavaScript-heavy pages. |\n\n## Output Formats\n\n| Format | Use case |\n| --- | --- |\n| `markdown` | RAG ingestion, summaries, doc indexing, and prompt context. |\n| `links` | Crawl planning and discovery. |\n| `metadata` | Titles, descriptions, canonical URLs, and page-level signals. |\n| `screenshot` | Visual QA, design reference, and page state capture. |\n\n## Operational Rules\n\n- API keys are workspace-scoped.\n- Credit estimates should be visible before long jobs run.\n- Failed screenshot or browser jobs should refund the screenshot portion when no usable output is produced.\n- Hosted scale uses credits; local open-source tools stay available where possible.\n- Usage, API keys, and credit history should be manageable from the [Agent Mag dashboard](/docs/dashboard).\n</agentmag-docs-context>\n"
+  },
+  "cli": {
+    "command": "npx agentmag add docs scrape",
+    "package": "agentmag",
+    "type": "docs-context",
+    "output": {
+      "markdown": ".agents/docs/agentmag/scrape.md",
+      "json": ".agents/docs/agentmag/scrape.json"
+    }
+  }
+}

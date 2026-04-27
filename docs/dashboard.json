@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "title": "Dashboard",
+  "description": "Manage API keys, jobs, schemas, usage, and billing from the Agent Mag dashboard.",
+  "url": "https://docs.theagentmag.com/dashboard",
+  "path": "/dashboard",
+  "slug": "dashboard",
+  "toc": [
+    {
+      "title": "Web Intelligence Dashboard",
+      "url": "#web-intelligence-dashboard",
+      "depth": 2
+    },
+    {
+      "title": "Usage Ledger Example",
+      "url": "#usage-ledger-example",
+      "depth": 2
+    },
+    {
+      "title": "Product Rule",
+      "url": "#product-rule",
+      "depth": 2
+    }
+  ],
+  "content": {
+    "markdown": "# Dashboard\n\nManage API keys, jobs, schemas, usage, and billing from the Agent Mag dashboard.\n\nThe dashboard is the management layer for hosted Agent Mag tools. Each tool can have its own workspace surface, but billing, credits, account settings, and API keys should remain unified.\n\n## Web Intelligence Dashboard\n\n| Section | Purpose |\n| --- | --- |\n| API keys | Create, scope, rotate, and revoke keys. |\n| Usage | Track credits by endpoint, key, job, and day. |\n| Jobs | Inspect scrape, crawl, extract, monitor, and failed job output. |\n| Schemas | Save extraction schemas and reuse them across jobs. |\n| Billing | Upgrade plans, buy top-ups, and enable auto-recharge later. |\n\n## Usage Ledger Example\n\n| Kind | Detail | Credits |\n| --- | --- | --- |\n| `scrape` | `docs.example.com` | `-12 cr` |\n| `extract` | `pricing page` | `-45 cr` |\n| `refund` | `failed screenshot` | `+4 cr` |\n| `crawl` | `sitemap.xml` | `-82 cr` |\n\n## Product Rule\n\nAgent Mag can add many tools without creating many dashboards. The left sidebar can expose tools as sections, while settings, credits, billing, API keys, and team controls remain shared.\n",
+    "text": "Dashboard\n\nManage API keys, jobs, schemas, usage, and billing from the Agent Mag dashboard.\n\nThe dashboard is the management layer for hosted Agent Mag tools. Each tool can have its own workspace surface, but billing, credits, account settings, and API keys should remain unified.\n\nWeb Intelligence Dashboard\n\n| Section | Purpose |\n| --- | --- |\n| API keys | Create, scope, rotate, and revoke keys. |\n| Usage | Track credits by endpoint, key, job, and day. |\n| Jobs | Inspect scrape, crawl, extract, monitor, and failed job output. |\n| Schemas | Save extraction schemas and reuse them across jobs. |\n| Billing | Upgrade plans, buy top-ups, and enable auto-recharge later. |\n\nUsage Ledger Example\n\n| Kind | Detail | Credits |\n| --- | --- | --- |\n| scrape | docs.example.com | -12 cr |\n| extract | pricing page | -45 cr |\n| refund | failed screenshot | +4 cr |\n| crawl | sitemap.xml | -82 cr |\n\nProduct Rule\n\nAgent Mag can add many tools without creating many dashboards. The left sidebar can expose tools as sections, while settings, credits, billing, API keys, and team controls remain shared.",
+    "agentPrompt": "Use this first-party Agent Mag documentation context when helping with \"Dashboard\".\n\nSource: https://docs.theagentmag.com/dashboard\nInstall command: npx agentmag add docs dashboard\n\nSummary: Manage API keys, jobs, schemas, usage, and billing from the Agent Mag dashboard.\n\nWhen answering, treat this documentation as product context, not as an installable skill bundle.\n\n<agentmag-docs-context>\n# Dashboard\n\nManage API keys, jobs, schemas, usage, and billing from the Agent Mag dashboard.\n\nThe dashboard is the management layer for hosted Agent Mag tools. Each tool can have its own workspace surface, but billing, credits, account settings, and API keys should remain unified.\n\n## Web Intelligence Dashboard\n\n| Section | Purpose |\n| --- | --- |\n| API keys | Create, scope, rotate, and revoke keys. |\n| Usage | Track credits by endpoint, key, job, and day. |\n| Jobs | Inspect scrape, crawl, extract, monitor, and failed job output. |\n| Schemas | Save extraction schemas and reuse them across jobs. |\n| Billing | Upgrade plans, buy top-ups, and enable auto-recharge later. |\n\n## Usage Ledger Example\n\n| Kind | Detail | Credits |\n| --- | --- | --- |\n| `scrape` | `docs.example.com` | `-12 cr` |\n| `extract` | `pricing page` | `-45 cr` |\n| `refund` | `failed screenshot` | `+4 cr` |\n| `crawl` | `sitemap.xml` | `-82 cr` |\n\n## Product Rule\n\nAgent Mag can add many tools without creating many dashboards. The left sidebar can expose tools as sections, while settings, credits, billing, API keys, and team controls remain shared.\n</agentmag-docs-context>\n"
+  },
+  "cli": {
+    "command": "npx agentmag add docs dashboard",
+    "package": "agentmag",
+    "type": "docs-context",
+    "output": {
+      "markdown": ".agents/docs/agentmag/dashboard.md",
+      "json": ".agents/docs/agentmag/dashboard.json"
+    }
+  }
+}

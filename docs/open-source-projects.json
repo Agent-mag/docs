@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "title": "Open Source AI Agent Tools",
+  "description": "Free Agent Mag source-code projects, AI agent tools, and installable assets for builders.",
+  "url": "https://docs.theagentmag.com/open-source-projects",
+  "path": "/open-source-projects",
+  "slug": "open-source-projects",
+  "toc": [
+    {
+      "title": "Examples",
+      "url": "#examples",
+      "depth": 2
+    },
+    {
+      "title": "Install Model",
+      "url": "#install-model",
+      "depth": 2
+    }
+  ],
+  "content": {
+    "markdown": "# Open Source AI Agent Tools\n\nFree Agent Mag source-code projects, AI agent tools, and installable assets for builders.\n\nOpen Source AI Agent Tools from Agent Mag are free source-code projects, local utilities, installable assets, and hosted upgrade paths for AI agent builders. These projects are the trust layer and distribution engine for the platform.\n\nThe pattern is simple:\n\n1. Publish useful tools with source code.\n2. Let builders run them locally for free.\n3. Offer hosted credits when they want scale, convenience, queues, dashboards, or team access.\n\n## Examples\n\n| Project type | Free version | Hosted version |\n| --- | --- | --- |\n| PDF to docs generator | Local source-code tool | Batch jobs, larger files, saved outputs, API access. |\n| Scraper tool | Self-hosted crawler or local script | Managed scraping API with browser workers and usage ledger. |\n| Skill packs | Free community skills | Verified and premium skill bundles bought with credits. |\n| Shadcn templates | Public starter templates | Premium installable templates and generated component packs. |\n\n## Install Model\n\nPremium assets can be installed with an `npx` workflow that checks the user account and consumes credits.\n\n```bash\nnpx agentmag add template saas-dashboard\n```\n\nThe same model can work for skills, templates, docs generators, and future Agent Mag tools.\n",
+    "text": "Open Source AI Agent Tools\n\nFree Agent Mag source-code projects, AI agent tools, and installable assets for builders.\n\nOpen Source AI Agent Tools from Agent Mag are free source-code projects, local utilities, installable assets, and hosted upgrade paths for AI agent builders. These projects are the trust layer and distribution engine for the platform.\n\nThe pattern is simple:\nPublish useful tools with source code.\nLet builders run them locally for free.\nOffer hosted credits when they want scale, convenience, queues, dashboards, or team access.\n\nExamples\n\n| Project type | Free version | Hosted version |\n| --- | --- | --- |\n| PDF to docs generator | Local source-code tool | Batch jobs, larger files, saved outputs, API access. |\n| Scraper tool | Self-hosted crawler or local script | Managed scraping API with browser workers and usage ledger. |\n| Skill packs | Free community skills | Verified and premium skill bundles bought with credits. |\n| Shadcn templates | Public starter templates | Premium installable templates and generated component packs. |\n\nInstall Model\n\nPremium assets can be installed with an npx workflow that checks the user account and consumes credits.\n\nnpx agentmag add template saas-dashboard\n\nThe same model can work for skills, templates, docs generators, and future Agent Mag tools.",
+    "agentPrompt": "Use this first-party Agent Mag documentation context when helping with \"Open Source AI Agent Tools\".\n\nSource: https://docs.theagentmag.com/open-source-projects\nInstall command: npx agentmag add docs open-source-projects\n\nSummary: Free Agent Mag source-code projects, AI agent tools, and installable assets for builders.\n\nWhen answering, treat this documentation as product context, not as an installable skill bundle.\n\n<agentmag-docs-context>\n# Open Source AI Agent Tools\n\nFree Agent Mag source-code projects, AI agent tools, and installable assets for builders.\n\nOpen Source AI Agent Tools from Agent Mag are free source-code projects, local utilities, installable assets, and hosted upgrade paths for AI agent builders. These projects are the trust layer and distribution engine for the platform.\n\nThe pattern is simple:\n\n1. Publish useful tools with source code.\n2. Let builders run them locally for free.\n3. Offer hosted credits when they want scale, convenience, queues, dashboards, or team access.\n\n## Examples\n\n| Project type | Free version | Hosted version |\n| --- | --- | --- |\n| PDF to docs generator | Local source-code tool | Batch jobs, larger files, saved outputs, API access. |\n| Scraper tool | Self-hosted crawler or local script | Managed scraping API with browser workers and usage ledger. |\n| Skill packs | Free community skills | Verified and premium skill bundles bought with credits. |\n| Shadcn templates | Public starter templates | Premium installable templates and generated component packs. |\n\n## Install Model\n\nPremium assets can be installed with an `npx` workflow that checks the user account and consumes credits.\n\n```bash\nnpx agentmag add template saas-dashboard\n```\n\nThe same model can work for skills, templates, docs generators, and future Agent Mag tools.\n</agentmag-docs-context>\n"
+  },
+  "cli": {
+    "command": "npx agentmag add docs open-source-projects",
+    "package": "agentmag",
+    "type": "docs-context",
+    "output": {
+      "markdown": ".agents/docs/agentmag/open-source-projects.md",
+      "json": ".agents/docs/agentmag/open-source-projects.json"
+    }
+  }
+}

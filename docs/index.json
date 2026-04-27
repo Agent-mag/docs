@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "title": "Documentation",
+  "description": "Developer documentation for Agent Mag APIs, tools, credits, and CLI workflows.",
+  "url": "https://docs.theagentmag.com",
+  "path": "/",
+  "slug": "index",
+  "toc": [
+    {
+      "title": "What Documentation Covers",
+      "url": "#what-documentation-covers",
+      "depth": 2
+    },
+    {
+      "title": "Current Product Stage",
+      "url": "#current-product-stage",
+      "depth": 2
+    },
+    {
+      "title": "Design Principle",
+      "url": "#design-principle",
+      "depth": 2
+    }
+  ],
+  "content": {
+    "markdown": "# Documentation\n\nDeveloper documentation for Agent Mag APIs, tools, credits, and CLI workflows.\n\nDocumentation is the developer hub for Agent Mag APIs, tools, credits, and CLI workflows. It gives AI agent builders a single technical reference for hosted APIs, free open-source tools, skills, templates, and credit-based products.\n\n> **TL;DR:** Documentation explains the Web Intelligence API, scrape workflows, credits, dashboard usage, and open-source builder tools.\n\nThe first docs section focuses on the Web Intelligence API: a hosted scraping and extraction layer designed for agents that need clean web context on the public web.\n\n## What Documentation Covers\n\n| Area | What it gives builders |\n| --- | --- |\n| Web Intelligence API | Scrape, crawl, search, and extract web pages into agent-ready context. |\n| Agent Mag credits | One wallet for hosted APIs, premium skills, templates, and future tools. |\n| Dashboard | API keys, jobs, usage, saved schemas, and billing controls in one place. |\n| Open-source projects | Free source-code tools that can run locally or upgrade into hosted scale. |\n\n## Current Product Stage\n\nThe docs are being built before the hosted API is public. That is intentional: the public surface, pricing logic, dashboard shape, and developer experience should be designed before the infrastructure hardens.\n\nThe Web Intelligence API is the first product track. More Agent Mag tools can plug into the same docs model, API key model, and credits model later.\n\n## Design Principle\n\nEvery tool should have three paths:\n\n1. A free or open-source path for trust and distribution.\n2. A hosted API path for speed and scale.\n3. A dashboard path for keys, usage, billing, and team management.\n\nThis keeps Agent Mag as one platform while still letting each tool become its own SEO and distribution asset.\n",
+    "text": "Documentation\n\nDeveloper documentation for Agent Mag APIs, tools, credits, and CLI workflows.\n\nDocumentation is the developer hub for Agent Mag APIs, tools, credits, and CLI workflows. It gives AI agent builders a single technical reference for hosted APIs, free open-source tools, skills, templates, and credit-based products.\n\n**TL;DR:** Documentation explains the Web Intelligence API, scrape workflows, credits, dashboard usage, and open-source builder tools.\n\nThe first docs section focuses on the Web Intelligence API: a hosted scraping and extraction layer designed for agents that need clean web context on the public web.\n\nWhat Documentation Covers\n\n| Area | What it gives builders |\n| --- | --- |\n| Web Intelligence API | Scrape, crawl, search, and extract web pages into agent-ready context. |\n| Agent Mag credits | One wallet for hosted APIs, premium skills, templates, and future tools. |\n| Dashboard | API keys, jobs, usage, saved schemas, and billing controls in one place. |\n| Open-source projects | Free source-code tools that can run locally or upgrade into hosted scale. |\n\nCurrent Product Stage\n\nThe docs are being built before the hosted API is public. That is intentional: the public surface, pricing logic, dashboard shape, and developer experience should be designed before the infrastructure hardens.\n\nThe Web Intelligence API is the first product track. More Agent Mag tools can plug into the same docs model, API key model, and credits model later.\n\nDesign Principle\n\nEvery tool should have three paths:\nA free or open-source path for trust and distribution.\nA hosted API path for speed and scale.\nA dashboard path for keys, usage, billing, and team management.\n\nThis keeps Agent Mag as one platform while still letting each tool become its own SEO and distribution asset.",
+    "agentPrompt": "Use this first-party Agent Mag documentation context when helping with \"Documentation\".\n\nSource: https://docs.theagentmag.com\nInstall command: npx agentmag add docs index\n\nSummary: Developer documentation for Agent Mag APIs, tools, credits, and CLI workflows.\n\nWhen answering, treat this documentation as product context, not as an installable skill bundle.\n\n<agentmag-docs-context>\n# Documentation\n\nDeveloper documentation for Agent Mag APIs, tools, credits, and CLI workflows.\n\nDocumentation is the developer hub for Agent Mag APIs, tools, credits, and CLI workflows. It gives AI agent builders a single technical reference for hosted APIs, free open-source tools, skills, templates, and credit-based products.\n\n> **TL;DR:** Documentation explains the Web Intelligence API, scrape workflows, credits, dashboard usage, and open-source builder tools.\n\nThe first docs section focuses on the Web Intelligence API: a hosted scraping and extraction layer designed for agents that need clean web context on the public web.\n\n## What Documentation Covers\n\n| Area | What it gives builders |\n| --- | --- |\n| Web Intelligence API | Scrape, crawl, search, and extract web pages into agent-ready context. |\n| Agent Mag credits | One wallet for hosted APIs, premium skills, templates, and future tools. |\n| Dashboard | API keys, jobs, usage, saved schemas, and billing controls in one place. |\n| Open-source projects | Free source-code tools that can run locally or upgrade into hosted scale. |\n\n## Current Product Stage\n\nThe docs are being built before the hosted API is public. That is intentional: the public surface, pricing logic, dashboard shape, and developer experience should be designed before the infrastructure hardens.\n\nThe Web Intelligence API is the first product track. More Agent Mag tools can plug into the same docs model, API key model, and credits model later.\n\n## Design Principle\n\nEvery tool should have three paths:\n\n1. A free or open-source path for trust and distribution.\n2. A hosted API path for speed and scale.\n3. A dashboard path for keys, usage, billing, and team management.\n\nThis keeps Agent Mag as one platform while still letting each tool become its own SEO and distribution asset.\n</agentmag-docs-context>\n"
+  },
+  "cli": {
+    "command": "npx agentmag add docs index",
+    "package": "agentmag",
+    "type": "docs-context",
+    "output": {
+      "markdown": ".agents/docs/agentmag/index.md",
+      "json": ".agents/docs/agentmag/index.json"
+    }
+  }
+}

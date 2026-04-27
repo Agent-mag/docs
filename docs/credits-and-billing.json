@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "title": "Credits and Billing",
+  "description": "One credit wallet for Agent Mag APIs, premium skills, templates, and hosted tools.",
+  "url": "https://docs.theagentmag.com/credits-and-billing",
+  "path": "/credits-and-billing",
+  "slug": "credits-and-billing",
+  "toc": [
+    {
+      "title": "Credit Ledger",
+      "url": "#credit-ledger",
+      "depth": 2
+    },
+    {
+      "title": "Why Credits Instead Of Many Purchases",
+      "url": "#why-credits-instead-of-many-purchases",
+      "depth": 2
+    },
+    {
+      "title": "Exhausted Credits",
+      "url": "#exhausted-credits",
+      "depth": 2
+    }
+  ],
+  "content": {
+    "markdown": "# Credits and Billing\n\nOne credit wallet for Agent Mag APIs, premium skills, templates, and hosted tools.\n\nAgent Mag credits are a unified billing wallet for Agent Mag APIs, premium skills, templates, and hosted tools. Agent Mag credits should be simple: users buy or receive credits, then spend them across hosted tools and premium assets. The same credit wallet is designed for scraping APIs, crawl jobs, AI extraction, premium skills, shadcn templates, image generation, and future hosted Agent Mag tools.\n\n## Credit Ledger\n\n| Product | Unit | Draft cost |\n| --- | --- | --- |\n| Scrape | Single-page web capture | `1+ credit/page` |\n| Crawl | Multi-page site traversal | `1 credit/page` |\n| AI extract | Schema-based structured output | `5+ credits/page` |\n| Search context | Search plus selected page capture | `2-5 credits/result` |\n| Premium skill | Installed skill bundle | Credit-priced item |\n| Shadcn template | Downloadable or installable template | Credit-priced item |\n\n## Why Credits Instead Of Many Purchases\n\nCredits keep the platform easy to understand when Agent Mag has many tools. A user should not need separate billing for scraping, templates, skills, image generation, and future APIs.\n\nThe product can still support subscriptions later:\n\n| Plan model | What it unlocks |\n| --- | --- |\n| Free | Newsletter, public docs, free tools, starter credits. |\n| Pro | Monthly credits, dashboard access, higher limits, premium assets. |\n| Team | Shared wallet, team API keys, usage analytics, private assets. |\n| Enterprise | Custom limits, private registries, support, and procurement. |\n\n## Exhausted Credits\n\nWhen credits run out, hosted execution stops. The dashboard should offer:\n\n1. Buy more credits.\n2. Upgrade to a monthly credit plan.\n3. Enable auto-recharge.\n4. Continue with open-source local tools when available.\n",
+    "text": "Credits and Billing\n\nOne credit wallet for Agent Mag APIs, premium skills, templates, and hosted tools.\n\nAgent Mag credits are a unified billing wallet for Agent Mag APIs, premium skills, templates, and hosted tools. Agent Mag credits should be simple: users buy or receive credits, then spend them across hosted tools and premium assets. The same credit wallet is designed for scraping APIs, crawl jobs, AI extraction, premium skills, shadcn templates, image generation, and future hosted Agent Mag tools.\n\nCredit Ledger\n\n| Product | Unit | Draft cost |\n| --- | --- | --- |\n| Scrape | Single-page web capture | 1+ credit/page |\n| Crawl | Multi-page site traversal | 1 credit/page |\n| AI extract | Schema-based structured output | 5+ credits/page |\n| Search context | Search plus selected page capture | 2-5 credits/result |\n| Premium skill | Installed skill bundle | Credit-priced item |\n| Shadcn template | Downloadable or installable template | Credit-priced item |\n\nWhy Credits Instead Of Many Purchases\n\nCredits keep the platform easy to understand when Agent Mag has many tools. A user should not need separate billing for scraping, templates, skills, image generation, and future APIs.\n\nThe product can still support subscriptions later:\n\n| Plan model | What it unlocks |\n| --- | --- |\n| Free | Newsletter, public docs, free tools, starter credits. |\n| Pro | Monthly credits, dashboard access, higher limits, premium assets. |\n| Team | Shared wallet, team API keys, usage analytics, private assets. |\n| Enterprise | Custom limits, private registries, support, and procurement. |\n\nExhausted Credits\n\nWhen credits run out, hosted execution stops. The dashboard should offer:\nBuy more credits.\nUpgrade to a monthly credit plan.\nEnable auto-recharge.\nContinue with open-source local tools when available.",
+    "agentPrompt": "Use this first-party Agent Mag documentation context when helping with \"Credits and Billing\".\n\nSource: https://docs.theagentmag.com/credits-and-billing\nInstall command: npx agentmag add docs credits-and-billing\n\nSummary: One credit wallet for Agent Mag APIs, premium skills, templates, and hosted tools.\n\nWhen answering, treat this documentation as product context, not as an installable skill bundle.\n\n<agentmag-docs-context>\n# Credits and Billing\n\nOne credit wallet for Agent Mag APIs, premium skills, templates, and hosted tools.\n\nAgent Mag credits are a unified billing wallet for Agent Mag APIs, premium skills, templates, and hosted tools. Agent Mag credits should be simple: users buy or receive credits, then spend them across hosted tools and premium assets. The same credit wallet is designed for scraping APIs, crawl jobs, AI extraction, premium skills, shadcn templates, image generation, and future hosted Agent Mag tools.\n\n## Credit Ledger\n\n| Product | Unit | Draft cost |\n| --- | --- | --- |\n| Scrape | Single-page web capture | `1+ credit/page` |\n| Crawl | Multi-page site traversal | `1 credit/page` |\n| AI extract | Schema-based structured output | `5+ credits/page` |\n| Search context | Search plus selected page capture | `2-5 credits/result` |\n| Premium skill | Installed skill bundle | Credit-priced item |\n| Shadcn template | Downloadable or installable template | Credit-priced item |\n\n## Why Credits Instead Of Many Purchases\n\nCredits keep the platform easy to understand when Agent Mag has many tools. A user should not need separate billing for scraping, templates, skills, image generation, and future APIs.\n\nThe product can still support subscriptions later:\n\n| Plan model | What it unlocks |\n| --- | --- |\n| Free | Newsletter, public docs, free tools, starter credits. |\n| Pro | Monthly credits, dashboard access, higher limits, premium assets. |\n| Team | Shared wallet, team API keys, usage analytics, private assets. |\n| Enterprise | Custom limits, private registries, support, and procurement. |\n\n## Exhausted Credits\n\nWhen credits run out, hosted execution stops. The dashboard should offer:\n\n1. Buy more credits.\n2. Upgrade to a monthly credit plan.\n3. Enable auto-recharge.\n4. Continue with open-source local tools when available.\n</agentmag-docs-context>\n"
+  },
+  "cli": {
+    "command": "npx agentmag add docs credits-and-billing",
+    "package": "agentmag",
+    "type": "docs-context",
+    "output": {
+      "markdown": ".agents/docs/agentmag/credits-and-billing.md",
+      "json": ".agents/docs/agentmag/credits-and-billing.json"
+    }
+  }
+}

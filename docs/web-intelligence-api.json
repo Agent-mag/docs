@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "title": "Web Intelligence API",
+  "description": "Scraping, crawling, extraction, and search context for AI agents.",
+  "url": "https://docs.theagentmag.com/web-intelligence-api",
+  "path": "/web-intelligence-api",
+  "slug": "web-intelligence-api",
+  "toc": [
+    {
+      "title": "API Family",
+      "url": "#api-family",
+      "depth": 2
+    },
+    {
+      "title": "Request Shape",
+      "url": "#request-shape",
+      "depth": 2
+    },
+    {
+      "title": "Response Shape",
+      "url": "#response-shape",
+      "depth": 2
+    },
+    {
+      "title": "Why It Lives Under Agent Mag",
+      "url": "#why-it-lives-under-agent-mag",
+      "depth": 2
+    }
+  ],
+  "content": {
+    "markdown": "# Web Intelligence API\n\nScraping, crawling, extraction, and search context for AI agents.\n\nThe Web Intelligence API turns public web pages into structured context that agents can use immediately. It starts with scraping and expands into crawl jobs, schema extraction, and search-backed context bundles.\n\n> **TL;DR:** The Web Intelligence API is Agent Mag's planned hosted web data API for scraping, crawling, extraction, and search-backed context for AI agents.\n\n## API Family\n\n| Endpoint | Stage | Use case | Credit model |\n| --- | --- | --- | --- |\n| `POST /v1/scrape` | Preview | Fetch one URL and return clean markdown, text, HTML, links, metadata, and screenshots when enabled. | `1+ credit/page` |\n| `POST /v1/crawl` | Planned | Traverse docs sites, sitemaps, blogs, and product sites with depth and limit controls. | `1 credit/page` |\n| `POST /v1/extract` | Planned | Apply a schema or instruction to scraped pages and return typed JSON objects. | `5+ credits/page` |\n| `POST /v1/search` | Planned | Find relevant web results, scrape selected pages, and return ranked context. | `2-5 credits/result` |\n\n## Request Shape\n\n```http\nPOST https://api.theagentmag.com/v1/scrape\nAuthorization: Bearer $AGENTMAG_API_KEY\nContent-Type: application/json\n```\n\n```json\n{\n  \"url\": \"https://docs.example.com\",\n  \"formats\": [\"markdown\", \"links\"],\n  \"agentContext\": true\n}\n```\n\n## Response Shape\n\n```json\n{\n  \"id\": \"scrape_01h\",\n  \"url\": \"https://docs.example.com\",\n  \"status\": \"completed\",\n  \"credits\": 3,\n  \"data\": {\n    \"markdown\": \"# Docs example...\",\n    \"links\": [\"https://docs.example.com/api\"],\n    \"metadata\": {\n      \"title\": \"Docs example\"\n    }\n  }\n}\n```\n\n## Why It Lives Under Agent Mag\n\nThe API belongs under Agent Mag because the platform already targets agent builders. The docs, CLI, dashboard, free tools, newsletter, and hosted APIs can all reinforce the same audience instead of splitting attention across separate brands.\n",
+    "text": "Web Intelligence API\n\nScraping, crawling, extraction, and search context for AI agents.\n\nThe Web Intelligence API turns public web pages into structured context that agents can use immediately. It starts with scraping and expands into crawl jobs, schema extraction, and search-backed context bundles.\n\n**TL;DR:** The Web Intelligence API is Agent Mag's planned hosted web data API for scraping, crawling, extraction, and search-backed context for AI agents.\n\nAPI Family\n\n| Endpoint | Stage | Use case | Credit model |\n| --- | --- | --- | --- |\n| POST /v1/scrape | Preview | Fetch one URL and return clean markdown, text, HTML, links, metadata, and screenshots when enabled. | 1+ credit/page |\n| POST /v1/crawl | Planned | Traverse docs sites, sitemaps, blogs, and product sites with depth and limit controls. | 1 credit/page |\n| POST /v1/extract | Planned | Apply a schema or instruction to scraped pages and return typed JSON objects. | 5+ credits/page |\n| POST /v1/search | Planned | Find relevant web results, scrape selected pages, and return ranked context. | 2-5 credits/result |\n\nRequest Shape\n\nPOST https://api.theagentmag.com/v1/scrape\nAuthorization: Bearer $AGENTMAG_API_KEY\nContent-Type: application/json\n\n{\n  \"url\": \"https://docs.example.com\",\n  \"formats\": [\"markdown\", \"links\"],\n  \"agentContext\": true\n}\n\nResponse Shape\n\n{\n  \"id\": \"scrape_01h\",\n  \"url\": \"https://docs.example.com\",\n  \"status\": \"completed\",\n  \"credits\": 3,\n  \"data\": {\n    \"markdown\": \"# Docs example...\",\n    \"links\": [\"https://docs.example.com/api\"],\n    \"metadata\": {\n      \"title\": \"Docs example\"\n    }\n  }\n}\n\nWhy It Lives Under Agent Mag\n\nThe API belongs under Agent Mag because the platform already targets agent builders. The docs, CLI, dashboard, free tools, newsletter, and hosted APIs can all reinforce the same audience instead of splitting attention across separate brands.",
+    "agentPrompt": "Use this first-party Agent Mag documentation context when helping with \"Web Intelligence API\".\n\nSource: https://docs.theagentmag.com/web-intelligence-api\nInstall command: npx agentmag add docs web-intelligence-api\n\nSummary: Scraping, crawling, extraction, and search context for AI agents.\n\nWhen answering, treat this documentation as product context, not as an installable skill bundle.\n\n<agentmag-docs-context>\n# Web Intelligence API\n\nScraping, crawling, extraction, and search context for AI agents.\n\nThe Web Intelligence API turns public web pages into structured context that agents can use immediately. It starts with scraping and expands into crawl jobs, schema extraction, and search-backed context bundles.\n\n> **TL;DR:** The Web Intelligence API is Agent Mag's planned hosted web data API for scraping, crawling, extraction, and search-backed context for AI agents.\n\n## API Family\n\n| Endpoint | Stage | Use case | Credit model |\n| --- | --- | --- | --- |\n| `POST /v1/scrape` | Preview | Fetch one URL and return clean markdown, text, HTML, links, metadata, and screenshots when enabled. | `1+ credit/page` |\n| `POST /v1/crawl` | Planned | Traverse docs sites, sitemaps, blogs, and product sites with depth and limit controls. | `1 credit/page` |\n| `POST /v1/extract` | Planned | Apply a schema or instruction to scraped pages and return typed JSON objects. | `5+ credits/page` |\n| `POST /v1/search` | Planned | Find relevant web results, scrape selected pages, and return ranked context. | `2-5 credits/result` |\n\n## Request Shape\n\n```http\nPOST https://api.theagentmag.com/v1/scrape\nAuthorization: Bearer $AGENTMAG_API_KEY\nContent-Type: application/json\n```\n\n```json\n{\n  \"url\": \"https://docs.example.com\",\n  \"formats\": [\"markdown\", \"links\"],\n  \"agentContext\": true\n}\n```\n\n## Response Shape\n\n```json\n{\n  \"id\": \"scrape_01h\",\n  \"url\": \"https://docs.example.com\",\n  \"status\": \"completed\",\n  \"credits\": 3,\n  \"data\": {\n    \"markdown\": \"# Docs example...\",\n    \"links\": [\"https://docs.example.com/api\"],\n    \"metadata\": {\n      \"title\": \"Docs example\"\n    }\n  }\n}\n```\n\n## Why It Lives Under Agent Mag\n\nThe API belongs under Agent Mag because the platform already targets agent builders. The docs, CLI, dashboard, free tools, newsletter, and hosted APIs can all reinforce the same audience instead of splitting attention across separate brands.\n</agentmag-docs-context>\n"
+  },
+  "cli": {
+    "command": "npx agentmag add docs web-intelligence-api",
+    "package": "agentmag",
+    "type": "docs-context",
+    "output": {
+      "markdown": ".agents/docs/agentmag/web-intelligence-api.md",
+      "json": ".agents/docs/agentmag/web-intelligence-api.json"
+    }
+  }
+}
